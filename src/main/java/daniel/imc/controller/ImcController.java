@@ -4,13 +4,11 @@ import daniel.imc.dto.ImcRequestDto;
 import daniel.imc.dto.ImcResponseDto;
 import daniel.imc.service.ImcService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/imc")
+@CrossOrigin(origins = "*")
 public class ImcController {
 
     private final ImcService imcService;
