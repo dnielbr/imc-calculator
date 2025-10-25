@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/imc")
-@CrossOrigin(origins = "*")
 public class ImcController {
 
     private final ImcService imcService;

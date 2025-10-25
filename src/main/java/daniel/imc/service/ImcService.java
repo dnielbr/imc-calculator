@@ -11,7 +11,7 @@ public class ImcService {
     public ImcResponseDto calcularImc(ImcRequestDto request){
 
         double alturaCm = ImcCalculator.calcularAlturaCm(request.altura());
-        double pesoIdeal = ImcCalculator.calcularPesoIdeal(ImcCalculator.calcularAlturaCm(request.altura()), request.peso());
+        double pesoIdeal = ImcCalculator.calcularPesoIdeal(alturaCm, request.peso());
         double imc = ImcCalculator.calcularImc(request.peso(), request.altura());
         String interpretacao = ImcCalculator.interpretarImc(imc);
 
